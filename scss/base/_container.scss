@@ -1,0 +1,25 @@
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: $width-site;
+	margin: 0 auto;
+	padding: 0 $gutter;
+
+	@include media('<desktop') {
+		//max-width: 874px;
+		padding: 0 $gutter-tabl;
+	}
+
+	@include media('<tablet') {
+		//max-width: 375px;
+		padding: 0 $gutter-mob;
+	}
+
+	@include media('<phone') {
+		padding: 0 15px;
+	}
+}

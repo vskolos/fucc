@@ -1,0 +1,48 @@
+.archive	{
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 30px 0 19px;
+
+	&__title {
+		margin: 0 0 33px 37px;
+		color: #CBCBCB;
+		letter-spacing: 0.03em;
+		font-size: 20px;
+		line-height: 1;
+	}
+
+	.articles-list  .articles-list__image {
+		padding-bottom: 69%;
+	}
+
+	@include media('<desktop') {
+		max-width: 648px;
+		padding:13px 0 30px;
+
+		&__title {
+			margin:  0 0 28px 4px;
+		}
+
+	}
+
+	@include media('<tablet') {
+		padding: 51px 0 0;
+
+		&__title {
+			margin:0 0 49px;
+		}
+
+		.articles-list  {
+			.articles-list__image {
+				padding-bottom: 71.5%;
+				margin: 0 0 17px;
+			}
+
+			.articles-list__title {
+				font-size: 15px;
+				line-height: 19px;
+			}
+		}
+	}
+}
+

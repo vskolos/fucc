@@ -1,0 +1,121 @@
+.description-list {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin: 0;
+	color: #8F94C5;
+	font-size: 15px;
+	line-height: 1.53;
+	letter-spacing: .03em;
+	font-weight: 400;
+	width: 100%;
+	white-space: nowrap;
+
+	&_item {
+		//width: 26%;
+		position: relative;
+		display: flex;
+	}
+
+	.dash {
+		display: inline-block;
+		vertical-align: top;
+		width: 21px;
+		height: 2px;
+		background: currentColor;
+		margin: 11px 25px 0;
+		content: '';
+	}
+
+	dt {
+		font-weight: 700;
+		letter-spacing: .05em;
+		margin-bottom: 10px;
+	}
+
+	dd {
+		margin: 0 0 10px;
+	}
+
+	dt + dd {
+		&:before {
+			margin: 0 6px;
+			content: '-';
+		}
+	}
+
+	&.red_style {
+		color: #F72528;
+	}
+
+	
+
+	@include media('>=tablet') {
+		&.invert-color {
+			filter: invert(100%);
+			mix-blend-mode: difference;
+		}
+	}
+
+	@include media('<desktop') {
+		letter-spacing: 0;
+		margin: 0 -60px 0 0;
+
+		&_item {
+			display: block;
+			text-align: left;
+			position: relative;
+		}
+
+		dt {
+			display: block;
+			letter-spacing: .02em;
+		}
+
+		dd {
+			display: block;
+		}
+
+		dt + dd {
+			&:before {
+				margin: 0;
+				content: '';
+			}
+		}
+	}
+
+	@include media('<tablet') {
+		margin: 119px 0 -51px;
+		display: block;
+		text-align: right;
+
+		&_item {
+			width: 100%;
+			text-align: right;
+		}
+
+		.dash {
+			display: none;
+		}
+
+		dt {
+			margin: 0 0 2px;
+		}
+
+		dd {
+			margin: 0 0 35px;
+		}
+
+		dt + dd {
+			&:before {
+				margin: 0 4px 0 0;
+				content: '-';
+			}
+		}
+
+		&.red_style {
+			color: #fff;
+		}
+
+	}
+}

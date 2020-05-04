@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fucc</title>
+	<link media="all" rel="stylesheet" href="css/vendors/fonts.css">
+	<link media="all" rel="stylesheet" href="css/main.css">
+</head>
+<body class="black-header">
+	<div id="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__logo">
+					<a href="/"><img src="images/logo.png" width="119" height="28" alt="image description"></a>
+				</div>
+				<div class="header__wrap">
+					<button class="js-login-opener login-opener">
+						<span class="visually-hidden">login opener</span>
+						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.612 19.5652C24.1608 17.4705 25 14.95 25 12.3212C25 5.51147 19.4094 0 12.5 0C5.59139 0 0 5.51072 0 12.3212C0 14.9493 0.838852 17.469 2.38667 19.5633C7.37362 12.8016 17.618 12.7955 22.612 19.5652ZM8.10547 7.26753C8.10547 4.87918 10.0769 2.93585 12.5 2.93585C14.9231 2.93585 16.8945 4.87918 16.8945 7.26753V8.71149C16.8945 11.1 14.9231 13.0432 12.5 13.0432C10.0769 13.0432 8.10547 11.1 8.10547 8.71149V7.26753Z" fill="white"/>
+							<path d="M12.4996 11.2319C14.1979 11.2319 15.5793 10.0617 15.5793 8.62328V7.31887C15.5793 5.88044 14.1979 4.71021 12.4996 4.71021C10.8014 4.71021 9.41992 5.88044 9.41992 7.31887V8.62328C9.41992 10.0617 10.8014 11.2319 12.4996 11.2319Z" fill="white"/>
+							<path d="M2.89844 20.7574C8.09144 26.4126 16.9035 26.4168 22.1013 20.7535C17.5192 13.8386 7.50525 13.8701 2.89844 20.7574Z" fill="white"/>
+						</svg>
+					</button>
+					<div class="memu-opener__wrap">
+						<button class="memu-opener">
+							<span class="visually-hidden">memu opener</span>
+							<span class="memu-opener__line"></span>
+						</button>
+					</div>
+					<div class="login-popop form-popup">
+						<h2 class="form-popup__title text-center">
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.612 19.5652C24.1608 17.4705 25 14.95 25 12.3212C25 5.51147 19.4094 0 12.5 0C5.59139 0 0 5.51072 0 12.3212C0 14.9493 0.838852 17.469 2.38667 19.5633C7.37362 12.8016 17.618 12.7955 22.612 19.5652ZM8.10547 7.26753C8.10547 4.87918 10.0769 2.93585 12.5 2.93585C14.9231 2.93585 16.8945 4.87918 16.8945 7.26753V8.71149C16.8945 11.1 14.9231 13.0432 12.5 13.0432C10.0769 13.0432 8.10547 11.1 8.10547 8.71149V7.26753Z" fill="white"/>
+								<path d="M12.4996 11.2319C14.1979 11.2319 15.5793 10.0617 15.5793 8.62328V7.31887C15.5793 5.88044 14.1979 4.71021 12.4996 4.71021C10.8014 4.71021 9.41992 5.88044 9.41992 7.31887V8.62328C9.41992 10.0617 10.8014 11.2319 12.4996 11.2319Z" fill="white"/>
+								<path d="M2.89844 20.7574C8.09144 26.4126 16.9035 26.4168 22.1013 20.7535C17.5192 13.8386 7.50525 13.8701 2.89844 20.7574Z" fill="white"/>
+							</svg>
+							<span>Личный кабинет</span>
+						</h2>
+						<button class="js-login-opener form-popup__close">
+							<span class="visually-hidden">login close</span>
+						</button>
+						<div class="form-popup__logo">
+							<img src="images/menu-logo.png" alt="image description" width="263" height="59">
+						</div>
+						<form action="#" class="form form-validation">
+							<div class="form__line">
+								<label for="login-login" class="visually-hidden">Логин</label>
+								<input id="login-login" data-required="true" type="email" placeholder="Логин" />
+							</div>
+							<div class="form__line">
+								<label for="login-password" class="visually-hidden">Пароль</label>
+								<input id="login-password" type="password" placeholder="Пароль" />
+							</div>
+							<span class="form__error text-center" style="display:none;">Ошибка. E-mail не зарегестрирован</span>
+							<div class="form__line">
+								<button class="btn black_bg" type="submit">Войти в кабинет</button>
+							</div>
+						</form>
+						<strong class="form-popup__or"><span>или</span></strong>
+						<button class="open-register js-login-opener js-register-opener">Зарегистрироваться</button>
+					</div>
+					<div class="register-popop form-popup">
+						<h2 class="form-popup__title text-center">
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.612 19.5652C24.1608 17.4705 25 14.95 25 12.3212C25 5.51147 19.4094 0 12.5 0C5.59139 0 0 5.51072 0 12.3212C0 14.9493 0.838852 17.469 2.38667 19.5633C7.37362 12.8016 17.618 12.7955 22.612 19.5652ZM8.10547 7.26753C8.10547 4.87918 10.0769 2.93585 12.5 2.93585C14.9231 2.93585 16.8945 4.87918 16.8945 7.26753V8.71149C16.8945 11.1 14.9231 13.0432 12.5 13.0432C10.0769 13.0432 8.10547 11.1 8.10547 8.71149V7.26753Z" fill="white"/>
+								<path d="M12.4996 11.2319C14.1979 11.2319 15.5793 10.0617 15.5793 8.62328V7.31887C15.5793 5.88044 14.1979 4.71021 12.4996 4.71021C10.8014 4.71021 9.41992 5.88044 9.41992 7.31887V8.62328C9.41992 10.0617 10.8014 11.2319 12.4996 11.2319Z" fill="white"/>
+								<path d="M2.89844 20.7574C8.09144 26.4126 16.9035 26.4168 22.1013 20.7535C17.5192 13.8386 7.50525 13.8701 2.89844 20.7574Z" fill="white"/>
+							</svg>
+							<span>Регистрация</span>
+						</h2>
+						<button class="js-register-opener form-popup__close">
+							<span class="visually-hidden">register close</span>
+						</button>
+						<div class="form-popup__logo">
+							<img src="images/menu-logo.png" alt="image description" width="263" height="59">
+						</div>
+						<form action="#" class="form form-validation">
+							<div class="form__columns">
+								<div class="form__col">
+									<div class="form__line">
+										<label for="register-login" class="visually-hidden">Логин</label>
+										<input id="register-login" type="text" data-required="true" placeholder="Логин" />
+									</div>
+									<div class="form__line">
+										<label for="register-email" class="visually-hidden">E-mail</label>
+										<input id="register-email" data-required="true" type="email" placeholder="E-mail" />
+									</div>
+									<div class="form__line">
+										<label for="register-phone" class="visually-hidden">Телефон</label>
+										<input class="phone-mask" data-regexp="^\d{1}$" id="register-phone" type="text" data-required="true" placeholder="Телефон" />
+									</div>
+								</div>
+								<div class="form__col">
+									<div class="form__line">
+										<label for="register-password" class="visually-hidden">Пароль</label>
+										<input id="register-password"  data-confirm="some_uniq" data-required="true" type="password" placeholder="Пароль" />
+									</div>
+									<div class="form__line">
+										<label for="register-password-add" class="visually-hidden">Повторить пароль</label>
+										<input id="register-password-add" data-confirm="some_uniq" type="password" placeholder="Повторить пароль" />
+									</div>
+									<div class="form__line form__line-addtitonal">
+										<label for="not-robot">
+											<input id="not-robot" type="checkbox" />
+											<span class="fake-input"></span>
+											<span class="fake-label">Я не робот</span>
+										</label>
+										<label for="sum">
+											<span class="fake-label">34+8 =</span>
+											<input id="sum" type="text" />
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line form__line-margin">
+								<label for="privacy-policy">
+									<input id="privacy-policy" type="checkbox" />
+									<span class="fake-input"></span>
+									<span class="fake-label">Согласен с <a href="#">политикой конфиденциальности</a> и обработки <a href="#">персональных данных</a></span>
+								</label>
+							</div>
+							<div class="form__line">
+								<button class="btn black_bg" type="submit">Зарегистрироваться</button>
+							</div>
+						</form>
+						<strong class="form-popup__or"><span>или</span></strong>
+						<button class="open-register js-login-opener js-register-opener">Войти в личный кабинет</button>
+					</div>
+				</div>
+			</div>
+			<nav class="header-menu">
+				<div class="container">
+					<ul class="menu-list">
+						<li class="menu-list__item"><a href="#" data-title="Сервисы" class="menu-list__link"><span>Сервисы</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Обучение" class="menu-list__link"><span>Обучение</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Рейтинги" class="menu-list__link"><span>Рейтинги</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Подбор аспирантуры" class="menu-list__link"><span>Подбор аспирантуры</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Блог" class="menu-list__link">Блог</a></li>
+					</ul>
+					<a href="#" class="memu-opener memu-opener-close">
+						<span class="visually-hidden">memu-opener</span>
+						<span class="memu-opener__line"></span>
+					</a>
+					<div class="menu-content text-center">
+						<strong class="footer__phone"><a href="tel:+79999999999">+7 (999) 999-99-99</a></strong>
+						<span class="footer__email"><a href="mailto:mail@mail.ru">mail@mail.ru</a></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main id="main">
+			<article class="article">
+				<div class="article__main-image">
+					<img src="images/image1.png" alt="image description" width="1904" height="658">
+				</div>
+				<div class="container article__content">
+					<h1>Подзаголовок</h1>
+					<blockquote>
+						<q>Мысль только тогда <strong>движет жизнью</strong>, когда она добыта своим умом или хотя отвечает на вопрос, возникший уже в душе. Мысль же чужая, воспринятая умом и памятью, не вли­яет на жизнь и уживается с противными ей поступками.</q>
+						<cite>Л.Н.Толстой</cite>
+					</blockquote>
+					<p><strong>Пример выделения текста</strong> Text 18px  и откуда они берутся порой не знают даже опытные рекрутеры. Кажется, что это человек, который умеет все. Мы поговорили с DevOps-инженером, чтобы разобраться в этой теме получше и узнать, как он позиционирует себя сам.</p>
+					<p>— Привет! Расскажи немного о себе?</p>
+					<p>— Я начал учиться в Переславле-Залесском на Информационных системах и технологиях, а затем переехал в Питер, и уже доучивался в ИНЖЭКОНе на Прикладной информатике в экономике. Если бы я пошел работать по профессии, то, наверное, сейчас <a href="#">пример ссылки</a>. Но все сложилось немного иным образом. Первой работой, на которую я устроился в 2009 году, был интернет-провайдер, я тогда учился на 2 курсе. В процессе работы я понял, куда хочу развиваться, что 1С разработка не так увлекательна, и я хочу большего. Затем компанию купили, характер работы сильно изменился, появилась бюрократия, да и интересные задачи исчезли от слова совсем. А в 2016 году я перебрался из сетей в энтерпрайз и начал развиваться в направлении DevOps.</p>
+					<p>— В какой момент ты понял, что хочешь стать DevOps-инженером?</p>
+					<p>— С самого детства я, можно сказать, был в обнимку с компьютером. Я любил решать инженерные задачи, и у меня это хорошо получалось, а когда делаешь что-то хорошо — хочется делать это еще лучше. Так что решение было принято каким-то интуитивным образом.</p>
+					<h2 class="first-letter">Sекрет №1</h2>
+					<h3>Подзаголовок позаголовка</h3>
+					<p>Пример выделения текста и откуда они берутся порой не знают даже опытные рекрутеры. Кажется, что это человек, который умеет все. Мы поговорили с DevOps-инженером, чтобы разобраться в этой теме получше и узнать, как он позиционирует себя сам.</p>
+					<p>— Привет! Расскажи немного о себе?</p>
+					<p>— Я начал учиться в Переславле-Залесском на Информационных системах и технологиях, а затем переехал в Питер, и уже доучивался в ИНЖЭКОНе на Прикладной информатике в экономике. Если бы я пошел работать по профессии, то, наверное, сейчас пример ссылки. Но все сложилось немного иным образом. Первой работой, на которую я устроился в 2009 году, был интернет-провайдер, я тогда учился на 2 курсе. В процессе работы я понял, куда хочу развиваться, что 1С разработка не так увлекательна, и я хочу большего. Затем компанию купили, характер работы сильно изменился, появилась бюрократия, да и интересные задачи исчезли от слова совсем. А в 2016 году я перебрался из сетей в энтерпрайз и начал развиваться в направлении DevOps.</p>
+					<p>— В какой момент ты понял, что хочешь стать DevOps-инженером?</p>
+					<p>— С самого детства я, можно сказать, был в обнимку с компьютером. Я любил решать инженерные задачи, и у меня это хорошо получалось, а когда делаешь что-то хорошо — хочется делать это еще лучше. Так что решение было принято каким-то интуитивным образом.</p>
+					<div class="content-image">
+						<img src="images/imge02.png" alt="image description" width="405" height="296">
+					</div>
+					<h3>Маркированный список</h3>
+					<ul>
+						<li>Пример выделения текста и откуда они берутся порой не знают</li>
+						<li>Даже опытные рекрутеры. Кажется, что это человек.</li>
+						<li>Мы поговорили с DevOps-инженером, чтобы разобраться в этой теме получше</li>
+						<li>Узнать, как он позиционирует себя сам.</li>
+						<li>Пример выделения текста</li>
+						<li>Даже опытные рекрутеры. Кажется, что это </li>
+						<li>Мы поговорили с DevOps-инженером, чтобы разобраться</li>
+						<li>Узнать, как он позиционирует себя сам.</li>
+					</ul>
+					<h3>Нумированный список</h3>
+					<ol>
+						<li>Lorem ipsum.</li>
+						<li>Lorem ipsum dolor sit.</li>
+						<li>Lorem ipsum.</li>
+						<li>Lorem ipsum dolor sit.</li>
+						<li>Lorem ipsum.</li>
+					</ol>
+				</div>
+			</article>
+			<div class="container">
+				<section class="actual">
+					<div class="text-section__title-wrap text-right">
+						<h2 class="h1 text-section__title with-sup">Актуальное<span class="sup">ТОП СТАТЕЙ</span></h2>
+					</div>
+					<ul class="articles-list">
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual1.png);"></a>
+							<h3 class="articles-list__title"><a href="#">ТОП-10 Секретов успешной работы в консалтинге</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual2.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Анализ рынка и бизнес-планы</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Куда пойти учиться?</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Куда пойти учиться?</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual1.png);"></a>
+							<h3 class="articles-list__title"><a href="#">ТОП-10 Секретов успешной работы в консалтинге</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual2.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Анализ рынка и бизнес-планы</a></h3>
+						</li>
+					</ul>
+					<div class="btn-wrap text-center">
+						<a href="#" class="btn">Показать все</a>
+					</div>
+				</section>
+			</div>
+			<section class="subscribe">
+			  <div class="container">
+					<h2 class="visually-hidden">Блок подписки</h2>
+					<div class="subscribe__row">
+						<div class="subscribe__text">
+							<p>Чтобы знать последние новости компании <br>(еще одна строчка) например о характере новостей</p>
+						</div>
+						<div class="subscribe__label-box">
+							<strong class="subscribe__label text_uppercase">FUCCERIZATOR</strong>
+						</div>
+						<div class="subscribe__links">
+							<a href="#" class="btn red_style btn_right">Подписаться</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__logo">
+					<a href="/"><img src="images/logo.png" width="119" height="28" alt="image description"></a>
+				</div>
+				<div class="footer__items">
+					<div class="footer__item">
+						<h3 class="footer__title">Инсайды</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Студенту</a></li>
+							<li class="footer-menu__item"><a href="#">Компании</a></li>
+							<li class="footer-menu__item"><a href="#">ВУЗ</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Обучение</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Методология МНИ</a></li>
+							<li class="footer-menu__item"><a href="#">КиКИ</a></li>
+							<li class="footer-menu__item"><a href="#">Роботоэтика</a></li>
+							<li class="footer-menu__item"><a href="#">Data Science для чайников</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Рейтинг</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Аспирантуры</a></li>
+							<li class="footer-menu__item"><a href="#">Методология КиКИ</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Блог</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Новости консалтинга</a></li>
+							<li class="footer-menu__item"><a href="#">Новости ВУЗов</a></li>
+							<li class="footer-menu__item"><a href="#">Методология КиКИ</a></li>
+							<li class="footer-menu__item"><a href="#">Роботоэтика</a></li>
+						</ul>
+					</div>
+					<div class="footer__item text-right">
+						<h3 class="footer__title">Подбор аспирантуры</h3>
+						<strong class="footer__phone"><a href="tel:+79999999999">+7 (999) 999-99-99</a></strong>
+						<span class="footer__email"><a href="mailto:mail@mail.ru">mail@mail.ru</a></span>
+					</div>
+				</div>
+				<div class="footer__copyright">Future consulting Career © 2020</div>
+			</div>
+		</footer>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/jquery.main.js"></script>
+	<script src="js/plyr.polyfilled.js"></script>
+	<script>
+		const players = Plyr.setup('[data-video-id="player"]', {
+			autoplay: false,
+			muted: true
+		});
+	</script>
+</body>
+</html>

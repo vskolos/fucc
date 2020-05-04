@@ -1,0 +1,135 @@
+.hero-blog {
+	display: flex;
+	align-items: center;
+	min-height: 652px;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.4375;
+	letter-spacing: 0.05em;
+	padding: 126px 0 10px;
+
+	.container {
+		width: 100%;
+	}
+
+	&__holder {
+		max-width: 590px;
+		letter-spacing: .065em;
+
+		a {
+			font-weight: inherit;
+		}
+	}
+
+	&__title {
+		font-size: 90px;
+		line-height: 1.33;
+		color: #F72528;
+		margin-bottom: 4px;
+		letter-spacing: 0;
+		text-transform: none;
+	}
+
+	p {
+		margin-bottom: 75px;
+	}
+
+	@include media('<desktop') {
+		min-height: 546px;
+		padding-top: 102px;
+		background-position: 44% 50%;
+		position: relative;
+		align-items: flex-start;
+
+		&__title {
+			font-size: 55px;
+			margin-bottom: 38px;
+		}
+
+		&__holder {
+			max-width: 450px;
+		}
+	}
+
+	@include media('<tablet') {
+		padding-top: 126px;
+		padding-bottom: 31px;
+		background-position: 64.5% 108%;
+    background-size: auto 63%;
+    background-repeat: no-repeat;
+
+		&__title {
+			font-size: 52px;
+			margin-bottom: 40px;
+		}
+
+		&__holder {
+			position: relative;
+
+			&:before {
+				position: absolute;
+				top: 80px;
+				left: -999px;
+				right: -999px;
+				bottom: -200px;
+				content: "";
+				z-index: 1;
+				pointer-events:none;
+				background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+			}
+
+			* {
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+}
+
+.btn-list {
+	padding-top: 64px;
+	@extend %listreset;
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	.btn {
+		display: block;
+		min-width: 237px;
+		padding: 18px 46px 17px;
+	}
+
+	@include media('<desktop') {
+		padding-top: 2px;
+
+		li {
+			margin-right: 14px;
+		}
+
+		.btn {
+			min-width: 186px;
+			padding: 17px 37px 16px;
+			letter-spacing: 0.05em;
+		}
+	}
+
+	@include media('<tablet') {
+		padding-top: 62px;
+
+		li {
+			margin-right: 0;
+			margin-bottom: 24px;
+		}
+
+		.btn {
+			padding: 17px 20px 16px;
+		}
+	}
+}

@@ -1,0 +1,149 @@
+.education {
+	background: $black;
+	color: $white;
+	padding: 109px 0 58px;
+
+	.container {
+		max-width: 1100px;
+	}
+
+	.education__title {
+		margin: 0 26px 68px 0;
+		letter-spacing: 2px;
+	}
+
+	.sup {
+		top: -1px;
+		right: -3px;
+		letter-spacing: 0.34em;
+	}
+
+	@include media('<desktop') {
+		padding: 69px 0 38px;
+
+		.container {
+			max-width: 762px;
+		}
+
+		.education__title {
+			margin: 0 2px 29px 0;
+			letter-spacing: 2px;
+		}
+
+		.sup {
+			font-size: 15px;
+			top: -7px;
+			right: 2px;
+			letter-spacing: 0.2em;
+		}
+	}
+
+	@include media('<tablet') {
+		padding: 69px 0 45px;
+
+		.education__title {
+			font-size: 38px;
+			margin: 0 0 47px;
+			letter-spacing: 1px;
+		}
+
+
+		.sup {
+			position: absolute;
+			font-size: 15px;
+			top: -13px;
+			right: 0;
+		}
+	}
+}
+
+.education__list {
+	@extend %listreset;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 25px;
+  color: $black;
+
+  li {
+  	width: calc(33.33% - 42px);
+  	margin: 0 21px 28px;
+  }
+
+  &-item {
+  	display: block;
+  	width: 100%;
+  	padding: 45% 16px 12px !important;
+  	position: relative;
+  	background-size: cover;
+  	background-position: 50%;
+  	background-repeat: no-repeat;
+  	text-decoration: none;
+  	color: $black;
+
+  	&:hover {
+  		opacity: 	.95;
+  	}
+  }
+
+  &-title {
+  	position: absolute;
+  	top: 9px;
+  	right: 10px;
+  	width: 70%;
+  	text-align: right;
+  	font-size: $font-size-base;
+  	line-height: 1.3889;
+  	margin: 0;
+  }
+
+  &-label {
+  	font-size: 36px;
+  	line-height: 1;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  }
+
+  @include media('<desktop') {
+  	li {
+	  	width: calc(33.33% - 12px);
+	  	margin: 0 6px 28px;
+	  }
+
+  	&-item {
+	  	padding: 48% 16px 12px !important;
+	  }
+
+	  &-title {
+	  	font-size: 15px;
+	  	line-height: 1.2667;
+	  	top: 8px;
+	  	right: 13px;
+	  	width: 90%;
+	  }
+
+	  &-label {
+	  	font-size: 30px;
+
+	  	svg {
+	  		transform: scale(0.8);
+	  		margin: 2px 0 -5px -3px;
+	  	}
+	  }
+  }
+
+  @include media('<tablet') {
+  	li {
+	  	width: 100%;
+	  	margin: 0 0 23px;
+	  }
+  	&-item {
+	  	padding: 53.4% 20px 16px !important;
+	  }
+
+	  &-title {
+	  	top: 14px;
+	  	right: 20px;
+	  }
+  }
+}

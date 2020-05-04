@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fucc</title>
+	<link media="all" rel="stylesheet" href="css/vendors/fonts.css">
+	<link media="all" rel="stylesheet" href="css/main.css">
+</head>
+<body class="black-header">
+	<div id="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__logo">
+					<a href="/"><img src="images/logo.png" width="119" height="28" alt="image description"></a>
+				</div>
+				<div class="header__wrap">
+					<button class="js-login-opener login-opener">
+						<span class="visually-hidden">login opener</span>
+						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.612 19.5652C24.1608 17.4705 25 14.95 25 12.3212C25 5.51147 19.4094 0 12.5 0C5.59139 0 0 5.51072 0 12.3212C0 14.9493 0.838852 17.469 2.38667 19.5633C7.37362 12.8016 17.618 12.7955 22.612 19.5652ZM8.10547 7.26753C8.10547 4.87918 10.0769 2.93585 12.5 2.93585C14.9231 2.93585 16.8945 4.87918 16.8945 7.26753V8.71149C16.8945 11.1 14.9231 13.0432 12.5 13.0432C10.0769 13.0432 8.10547 11.1 8.10547 8.71149V7.26753Z" fill="white"/>
+							<path d="M12.4996 11.2319C14.1979 11.2319 15.5793 10.0617 15.5793 8.62328V7.31887C15.5793 5.88044 14.1979 4.71021 12.4996 4.71021C10.8014 4.71021 9.41992 5.88044 9.41992 7.31887V8.62328C9.41992 10.0617 10.8014 11.2319 12.4996 11.2319Z" fill="white"/>
+							<path d="M2.89844 20.7574C8.09144 26.4126 16.9035 26.4168 22.1013 20.7535C17.5192 13.8386 7.50525 13.8701 2.89844 20.7574Z" fill="white"/>
+						</svg>
+					</button>
+					<div class="memu-opener__wrap">
+						<button class="memu-opener">
+							<span class="visually-hidden">memu opener</span>
+							<span class="memu-opener__line"></span>
+						</button>
+					</div>
+					<div class="login-popop form-popup">
+						<h2 class="form-popup__title text-center">
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.612 19.5652C24.1608 17.4705 25 14.95 25 12.3212C25 5.51147 19.4094 0 12.5 0C5.59139 0 0 5.51072 0 12.3212C0 14.9493 0.838852 17.469 2.38667 19.5633C7.37362 12.8016 17.618 12.7955 22.612 19.5652ZM8.10547 7.26753C8.10547 4.87918 10.0769 2.93585 12.5 2.93585C14.9231 2.93585 16.8945 4.87918 16.8945 7.26753V8.71149C16.8945 11.1 14.9231 13.0432 12.5 13.0432C10.0769 13.0432 8.10547 11.1 8.10547 8.71149V7.26753Z" fill="white"/>
+								<path d="M12.4996 11.2319C14.1979 11.2319 15.5793 10.0617 15.5793 8.62328V7.31887C15.5793 5.88044 14.1979 4.71021 12.4996 4.71021C10.8014 4.71021 9.41992 5.88044 9.41992 7.31887V8.62328C9.41992 10.0617 10.8014 11.2319 12.4996 11.2319Z" fill="white"/>
+								<path d="M2.89844 20.7574C8.09144 26.4126 16.9035 26.4168 22.1013 20.7535C17.5192 13.8386 7.50525 13.8701 2.89844 20.7574Z" fill="white"/>
+							</svg>
+							<span>Личный кабинет</span>
+						</h2>
+						<button class="js-login-opener form-popup__close">
+							<span class="visually-hidden">login close</span>
+						</button>
+						<div class="form-popup__logo">
+							<img src="images/menu-logo.png" alt="image description" width="263" height="59">
+						</div>
+						<form action="#" class="form form-validation">
+							<div class="form__line">
+								<label for="login-login" class="visually-hidden">Логин</label>
+								<input id="login-login" data-required="true" type="email" placeholder="Логин" />
+							</div>
+							<div class="form__line">
+								<label for="login-password" class="visually-hidden">Пароль</label>
+								<input id="login-password" type="password" placeholder="Пароль" />
+							</div>
+							<span class="form__error text-center" style="display:none;">Ошибка. E-mail не зарегестрирован</span>
+							<div class="form__line">
+								<button class="btn black_bg" type="submit">Войти в кабинет</button>
+							</div>
+						</form>
+						<strong class="form-popup__or"><span>или</span></strong>
+						<button class="open-register js-login-opener js-register-opener">Зарегистрироваться</button>
+					</div>
+					<div class="register-popop form-popup">
+						<h2 class="form-popup__title text-center">
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.612 19.5652C24.1608 17.4705 25 14.95 25 12.3212C25 5.51147 19.4094 0 12.5 0C5.59139 0 0 5.51072 0 12.3212C0 14.9493 0.838852 17.469 2.38667 19.5633C7.37362 12.8016 17.618 12.7955 22.612 19.5652ZM8.10547 7.26753C8.10547 4.87918 10.0769 2.93585 12.5 2.93585C14.9231 2.93585 16.8945 4.87918 16.8945 7.26753V8.71149C16.8945 11.1 14.9231 13.0432 12.5 13.0432C10.0769 13.0432 8.10547 11.1 8.10547 8.71149V7.26753Z" fill="white"/>
+								<path d="M12.4996 11.2319C14.1979 11.2319 15.5793 10.0617 15.5793 8.62328V7.31887C15.5793 5.88044 14.1979 4.71021 12.4996 4.71021C10.8014 4.71021 9.41992 5.88044 9.41992 7.31887V8.62328C9.41992 10.0617 10.8014 11.2319 12.4996 11.2319Z" fill="white"/>
+								<path d="M2.89844 20.7574C8.09144 26.4126 16.9035 26.4168 22.1013 20.7535C17.5192 13.8386 7.50525 13.8701 2.89844 20.7574Z" fill="white"/>
+							</svg>
+							<span>Регистрация</span>
+						</h2>
+						<button class="js-register-opener form-popup__close">
+							<span class="visually-hidden">register close</span>
+						</button>
+						<div class="form-popup__logo">
+							<img src="images/menu-logo.png" alt="image description" width="263" height="59">
+						</div>
+						<form action="#" class="form form-validation">
+							<div class="form__columns">
+								<div class="form__col">
+									<div class="form__line">
+										<label for="register-login" class="visually-hidden">Логин</label>
+										<input id="register-login" type="text" data-required="true" placeholder="Логин" />
+									</div>
+									<div class="form__line">
+										<label for="register-email" class="visually-hidden">E-mail</label>
+										<input id="register-email" data-required="true" type="email" placeholder="E-mail" />
+									</div>
+									<div class="form__line">
+										<label for="register-phone" class="visually-hidden">Телефон</label>
+										<input class="phone-mask" data-regexp="^\d{1}$" id="register-phone" type="text" data-required="true" placeholder="Телефон" />
+									</div>
+								</div>
+								<div class="form__col">
+									<div class="form__line">
+										<label for="register-password" class="visually-hidden">Пароль</label>
+										<input id="register-password"  data-confirm="some_uniq" data-required="true" type="password" placeholder="Пароль" />
+									</div>
+									<div class="form__line">
+										<label for="register-password-add" class="visually-hidden">Повторить пароль</label>
+										<input id="register-password-add" data-confirm="some_uniq" type="password" placeholder="Повторить пароль" />
+									</div>
+									<div class="form__line form__line-addtitonal">
+										<label for="not-robot">
+											<input id="not-robot" type="checkbox" />
+											<span class="fake-input"></span>
+											<span class="fake-label">Я не робот</span>
+										</label>
+										<label for="sum">
+											<span class="fake-label">34+8 =</span>
+											<input id="sum" type="text" />
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line form__line-margin">
+								<label for="privacy-policy">
+									<input id="privacy-policy" type="checkbox" />
+									<span class="fake-input"></span>
+									<span class="fake-label">Согласен с <a href="#">политикой конфиденциальности</a> и обработки <a href="#">персональных данных</a></span>
+								</label>
+							</div>
+							<div class="form__line">
+								<button class="btn black_bg" type="submit">Зарегистрироваться</button>
+							</div>
+						</form>
+						<strong class="form-popup__or"><span>или</span></strong>
+						<button class="open-register js-login-opener js-register-opener">Войти в личный кабинет</button>
+					</div>
+				</div>
+			</div>
+			<nav class="header-menu">
+				<div class="container">
+					<ul class="menu-list">
+						<li class="menu-list__item"><a href="#" data-title="Сервисы" class="menu-list__link"><span>Сервисы</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Обучение" class="menu-list__link"><span>Обучение</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Рейтинги" class="menu-list__link"><span>Рейтинги</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Подбор аспирантуры" class="menu-list__link"><span>Подбор аспирантуры</span></a></li>
+						<li class="menu-list__item"><a href="#" data-title="Блог" class="menu-list__link">Блог</a></li>
+					</ul>
+					<a href="#" class="memu-opener memu-opener-close">
+						<span class="visually-hidden">memu-opener</span>
+						<span class="memu-opener__line"></span>
+					</a>
+					<div class="menu-content text-center">
+						<strong class="footer__phone"><a href="tel:+79999999999">+7 (999) 999-99-99</a></strong>
+						<span class="footer__email"><a href="mailto:mail@mail.ru">mail@mail.ru</a></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main id="main">
+			<section class="hero-blog" style="background-image: url(images/hero-blog.png);">
+				<div class="container">
+					<div class="hero-blog__holder">
+						<h1 class="hero-blog__title">Блог</h1>
+						<p>Здесь собранны статьи и рекомендации лучших рекрутенговых агенств Какие навыки необходимо иметь, чтобы <a href="#">утроиться на должность</a> такую-то и такую-то, что способствует карьерному росту и пр</p>
+					</div>
+					<ul class="btn-list">
+						<li><a href="#" class="btn black_style">#консалтинг</a></li>
+						<li><a href="#" class="btn black_style">#работа за рубежом</a></li>
+						<li><a href="#" class="btn black_style">#Мероприятия</a></li>
+					</ul>
+				</div>
+			</section>
+			<div class="container">
+				<section class="actual actual-blog">
+					<div class="text-section__title-wrap text-right">
+						<h2 class="h1 text-section__title with-sup">Актуальное<span class="sup">ТОП СТАТЕЙ</span></h2>
+					</div>
+					<ul class="articles-list">
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual1.png);"></a>
+							<h3 class="articles-list__title"><a href="#">ТОП-10 Секретов успешной работы в консалтинге</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual2.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Анализ рынка и бизнес-планы</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Куда пойти учиться?</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Куда пойти учиться?</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual1.png);"></a>
+							<h3 class="articles-list__title"><a href="#">ТОП-10 Секретов успешной работы в консалтинге</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/actual2.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Анализ рынка и бизнес-планы</a></h3>
+						</li>
+					</ul>
+					<div class="js-open-close">
+						<div class="btn-wrap text-center">
+							<a href="#" class="btn js-opener"><span>Показать все</span><em>Скрыть остальное</em></a>
+						</div>
+						<div class="articles-list__slide js-slide">
+							<ul class="articles-list">
+								<li class="articles-list__item">
+									<a href="#" class="articles-list__image" style="background-image: url(images/arhive3.png);"></a>
+									<h3 class="articles-list__title"><a href="#">Экономическое дно и как из него выбираться? Конференция</a></h3>
+								</li>
+								<li class="articles-list__item">
+									<a href="#" class="articles-list__image" style="background-image: url(images/arhive3.png);"></a>
+									<h3 class="articles-list__title"><a href="#">Бесплатный мастер-класс Елены Брагиной. 23 марта. Москва</a></h3>
+								</li>
+								<li class="articles-list__item">
+									<a href="#" class="articles-list__image" style="background-image: url(images/arhive3.png);"></a>
+									<h3 class="articles-list__title"><a href="#">Как поступить в Оксфорд? Тренинг в прямом эфире</a></h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="subscribe">
+			  <div class="container">
+					<h2 class="visually-hidden">Блок подписки</h2>
+					<div class="subscribe__row">
+						<div class="subscribe__text">
+							<p>Чтобы знать последние новости компании <br>(еще одна строчка) например о характере новостей</p>
+						</div>
+						<div class="subscribe__label-box">
+							<strong class="subscribe__label text_uppercase">FUCCERIZATOR</strong>
+						</div>
+						<div class="subscribe__links">
+							<a href="#" class="btn red_style btn_right">Подписаться</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="event-poster">
+				<div class="container">
+					<h2 class="h1 event-poster__title with-sup">Афиша событий<span class="sup">ONLINE 2020</span></h2>
+					<div class="event-post">
+						<div class="event-post__content">
+							<time datetime="2020-04-20" class="event-post__time">20 АПРЕЛЯ</time>
+							<h3 class="event-post__title"><a href="#">НАЗВАНИЕ СТАТЬИ</a></h3>
+							<div class="event-post__text">
+								<p>Мы – команда амбииозных людей, добившихся неординарных достижений в области консалтинга, с самыми передовыми  образвательными <br>и аналитическими мощностями в России.</p>
+							</div>
+							<a href="#" class="event-post__link">ВЕБИНАР</a>
+							<a href="#" class="btn red_border">Принять участие</a>
+						</div>
+						<div class="event-post__image">
+							<div class="video-wrapper plyr__video-embed" data-video-id="player">
+				      	<iframe src="https://www.youtube.com/embed/OpQFFLBMEPI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" width="1017" height="675" allowfullscreen></iframe>
+				      </div>
+				      <a href="#" class="btn red_border">Принять участие</a>
+						</div>
+					</div>
+					<div class="event-post">
+						<div class="event-post__content">
+							<time datetime="2020-04-20" class="event-post__time">20 АПРЕЛЯ</time>
+							<h3 class="event-post__title"><a href="#">НАЗВАНИЕ СТАТЬИ</a></h3>
+							<div class="event-post__text">
+								<p>Мы – команда амбииозных людей, добившихся неординарных достижений в области консалтинга, с самыми передовыми  образвательными <br>и аналитическими мощностями в России.</p>
+							</div>
+							<a href="#" class="event-post__link">ВЕБИНАР</a>
+							<a href="#" class="btn red_border">Принять участие</a>
+						</div>
+						<div class="event-post__image">
+							<div class="video-wrapper">
+				      	<img src="images/arhive1.png" alt="image description">
+				      </div>
+				      <a href="#" class="btn red_border">Принять участие</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="container">
+				<section class="archive">
+					<h3 class="archive__title text_uppercase">АРХИВ</h3>
+					<ul class="articles-list">
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/arhive3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Экономическое дно и как из него выбираться? Конференция</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/arhive3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Бесплатный мастер-класс Елены Брагиной. 23 марта. Москва</a></h3>
+						</li>
+						<li class="articles-list__item">
+							<a href="#" class="articles-list__image" style="background-image: url(images/arhive3.png);"></a>
+							<h3 class="articles-list__title"><a href="#">Как поступить в Оксфорд? Тренинг в прямом эфире</a></h3>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<section class="education">
+				<div class="container">
+					<div class="text-section__title-wrap text-right">
+						<h2 class="h1 education__title with-sup">Образование<span class="sup">ЛУЧШИЕ КУРСЫ</span></h2>
+					</div>
+					<ul class="education__list">
+						<li>
+							<a href="#" class="education__list-item" style="background-image: url(images/education1.png);">
+								<h3 class="education__list-title">Карьера в Европе</h3>
+								<span class="education__list-label">ТРЕНИНГ</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="education__list-item" style="background-image: url(images/education2.png);">
+								<h3 class="education__list-title">Мини-трениг<br> по тайм-менеджменту</h3>
+								<span class="education__list-label">ВИДЕО 
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.8945 14.0002L11.0524 19.1052L11.0524 8.89521L19.8945 14.0002Z" fill="#02080F"/>
+										<circle cx="14" cy="14" r="12.5" stroke="black" stroke-width="3"/>
+									</svg>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="education__list-item" style="background-image: url(images/education3.png);">
+								<h3 class="education__list-title">Чего ждать в 2030?</h3>
+								<span class="education__list-label">ЛЕКЦИЯ</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__logo">
+					<a href="/"><img src="images/logo.png" width="119" height="28" alt="image description"></a>
+				</div>
+				<div class="footer__items">
+					<div class="footer__item">
+						<h3 class="footer__title">Инсайды</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Студенту</a></li>
+							<li class="footer-menu__item"><a href="#">Компании</a></li>
+							<li class="footer-menu__item"><a href="#">ВУЗ</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Обучение</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Методология МНИ</a></li>
+							<li class="footer-menu__item"><a href="#">КиКИ</a></li>
+							<li class="footer-menu__item"><a href="#">Роботоэтика</a></li>
+							<li class="footer-menu__item"><a href="#">Data Science для чайников</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Рейтинг</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Аспирантуры</a></li>
+							<li class="footer-menu__item"><a href="#">Методология КиКИ</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Блог</h3>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#">Новости консалтинга</a></li>
+							<li class="footer-menu__item"><a href="#">Новости ВУЗов</a></li>
+							<li class="footer-menu__item"><a href="#">Методология КиКИ</a></li>
+							<li class="footer-menu__item"><a href="#">Роботоэтика</a></li>
+						</ul>
+					</div>
+					<div class="footer__item text-right">
+						<h3 class="footer__title">Подбор аспирантуры</h3>
+						<strong class="footer__phone"><a href="tel:+79999999999">+7 (999) 999-99-99</a></strong>
+						<span class="footer__email"><a href="mailto:mail@mail.ru">mail@mail.ru</a></span>
+					</div>
+				</div>
+				<div class="footer__copyright">Future consulting Career © 2020</div>
+			</div>
+		</footer>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/jquery.main.js"></script>
+	<script src="js/plyr.polyfilled.js"></script>
+	<script>
+		const players = Plyr.setup('[data-video-id="player"]', {
+			autoplay: false,
+			muted: true
+		});
+	</script>
+</body>
+</html>

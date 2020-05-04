@@ -1,0 +1,338 @@
+// Typography
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+	font-family: $headings-font-family;
+	font-weight: bold;
+	margin: 0 0 0.5em;
+	color: $headings-color;
+}
+
+h1, .h1 {
+	font-size: $h1-font-size;
+	line-height: 1;
+
+	@include media('<desktop') {
+		font-size: $h1-font-size-tablet;
+	}
+
+	@include media('<tablet') {
+		font-size: $h1-font-size-mobile;
+	}
+}
+
+h2, .h2 {
+	font-size: $h2-font-size;
+	line-height: 1;
+	text-transform: uppercase;
+
+	@include media('<desktop') {
+		font-size: $h2-font-size-tablet;
+	}
+
+	@include media('<tablet') {
+		font-size: $h2-font-size-mobile;
+	}
+}
+
+h3, .h3 {
+	font-size: $h3-font-size;
+	line-height: 0.885;
+
+	@include media('<desktop') {
+		font-size: $h3-font-size-tablet;
+	}
+
+	@include media('<tablet') {
+		font-size: $h3-font-size-mobile;
+	}
+}
+
+
+h4, .h4 {
+	font-size: $h4-font-size;
+
+	@include media('<desktop') {
+		font-size: $h4-font-size-tablet;
+	}
+
+	@include media('<tablet') {
+		font-size: $h4-font-size-mobile;
+	}
+}
+
+h5, .h5 {
+	font-size: $h5-font-size;
+
+	@include media('<desktop') {
+		font-size: $h5-font-size-tablet;
+	}
+
+	@include media('<tablet') {
+		font-size: $h5-font-size-mobile;
+	}
+}
+
+h6, .h6 {
+	font-size: $h6-font-size;
+
+	@include media('<desktop') {
+		font-size: $h6-font-size-tablet;
+	}
+
+	@include media('<tablet') {
+		font-size: $h6-font-size-mobile;
+	}
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	color: $base-link-color;
+	font-weight: 700;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin: 0 0 39px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		position: relative;
+		padding: 0 0 20px 25px;
+
+		&:before {
+			position: absolute;
+			top: 9px;
+			left: 0;
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			background: #f72528;
+		}
+	}
+
+	@include media('<desktop') {
+		margin-bottom: 39px;
+
+		li {
+			padding-left: 20px;
+		}
+	}
+
+	@include media('<tablet') {
+		margin-bottom: 15px;
+
+		li {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+ol {
+	margin: 0 0 39px;
+	padding: 0;
+	list-style: none;
+	counter-reset: newCounter;
+	li {
+		position: relative;
+		padding: 0 0 20px 25px;
+
+		&:before {
+			font-size: 18px;
+			font-weight: bold;
+			counter-increment: newCounter;
+   		content: counters(newCounter,"") " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #f72528;
+		}
+	}
+	@include media('<desktop') {
+		margin-bottom: 39px;
+		
+		li {
+			padding-left: 20px;
+		}
+	}
+	@include media('<tablet') {
+		margin-bottom: 15px;
+
+		li {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.with-sup {
+	position: relative;
+	text-transform: none;
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: .1em;
+
+	.sup {
+		position: absolute;
+		top: 7px;
+		right: 13px;
+		font-size: 13px;
+		line-height: 1;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0;
+	}
+
+	@include media('<desktop') {
+		letter-spacing: .15em;
+		
+		.sup {
+			font-size: 10px;
+		}
+	}
+	@include media('<tablet') {
+		.sup {
+			position: static;
+			display: block;
+			font-size: 13px;
+		}
+	}
+}
+
+.text_uppercase {
+	text-transform: uppercase;
+}
+
+.text_capitalize {
+	text-transform: capitalize;
+}
+
+// @extend %listreset;
+
+blockquote {
+	margin: 0 0 60px;
+	padding: 31px 118px 59px 84px;
+	border: 15px solid #F72528;
+	font-weight: 400;	
+	position: relative;	
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: -15px;
+		content: "«";
+		background: $white;
+		color: $red;
+		font-size: 40px;
+		line-height: 18px;
+		font-weight: 900;
+		height: 24px;
+	}
+
+	&:after {
+		position: absolute;
+		bottom: -20px;
+		right: -16px;
+		content: "«";
+		background: $white;
+		color: $red;
+		font-size: 40px;
+		line-height: 18px;
+		font-weight: 900;
+		height: 24px;
+		transform: rotate(180deg);
+	}
+
+	strong {
+		font-size: 	24px;
+		display: inline-block;
+		vertical-align: top;
+		margin: -6px 0 -2px;
+	}
+
+	q {
+		display: block;	
+
+		&:before,
+		&:after {
+			display: none;	
+		}
+	}
+
+	cite {
+		position: absolute;
+		bottom: -21px;
+		right:  0;
+		padding: 0 21px;
+		letter-spacing: 0.05em;
+		font-size: 	$font-size-base  + 2;
+		font-weight: 900;	
+		background: $white;
+		color: $black;
+		font-style: normal;	
+	}
+
+	@include media('<desktop') {
+		margin: 0 0 49px;
+		padding: 37px 75px 42px 67px;
+		border: 8px solid #F72528;
+
+		strong {
+			font-size: 	22px;
+			margin: -4px 0 -2px;
+		}
+
+		cite {
+			bottom: -16px;
+			padding: 0 30px 0 26px;
+		}
+
+		&:before {
+			top: 0;
+			left: -10px;
+			font-size: 22px;
+			line-height: 22px;
+			height: 25px;
+		}
+
+		&:after {
+			bottom: -15px;
+			right: -9px;
+			font-size: 22px;
+			line-height: 24px;
+			height: 25px;
+		}
+
+
+	}
+
+	@include media('<tablet') {
+		padding: 36px 21px 32px 19px;
+		margin-bottom: 52px;
+
+		&:before {
+			top: 19px;
+		}
+
+		&:after {
+			bottom: -17px;
+		}
+
+		cite {
+			bottom: -18px;
+		}
+	}
+}
+
