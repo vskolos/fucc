@@ -1,18 +1,8 @@
 jQuery(function() {
 	initMobileNav();
 	initFormValidation();
-	initPhoneMask();
 	initOpenClose();
 });
-
-function initPhoneMask() {
-	var selector = document.getElementsByClassName('phone-mask');
-
-	if (selector.length) {
-		var im = new Inputmask("999999999999999999999999999999999999999999999999999999999999999999999999");
-		im.mask(selector);
-	}
-}
 
 // open-close init
 function initOpenClose() {

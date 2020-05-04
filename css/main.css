@@ -2860,6 +2860,15 @@ button {
 	top: 31px;
 }
 
+.memu-opener:hover,
+.memu-opener:focus {
+	background: #d30509 !important;
+}
+
+.memu-opener:active {
+	background: #b5070d !important;
+}
+
 .memu-active .memu-opener .memu-opener__line {
 	opacity: 0;
 }
@@ -5210,6 +5219,8 @@ button {
 	}
 
 	.header-menu .container {
+		overflow: auto;
+		height: 100vh;
 		position: static;
 	}
 
@@ -5219,8 +5230,8 @@ button {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		padding: 117px 3px;
-		margin: 0 -25px 0 0;
+		padding: 117px 3px 50px;
+		margin: 0 -15px 0 0;
 		text-transform: uppercase;
 		letter-spacing: .08em;
 	}
@@ -5294,6 +5305,7 @@ button {
 	.form-popup .open-register {
 		padding: 61px 15px 53px;
 		margin: 0 -56px -42px;
+		width: calc(100% + 112px);
 		font-size: 18px;
 	}
 
@@ -5319,11 +5331,8 @@ button {
 
 	.menu-content {
 		display: block;
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 10vh;
 		font-size: 20px;
+		padding-bottom: 12vh;
 	}
 
 	.menu-content a {
@@ -6070,6 +6079,14 @@ button {
 
 	.header-menu .memu-opener-close {
 		right: 10px;
+	}
+
+	.menu-list {
+		font-size: 20px;
+	}
+
+	.menu-list__item {
+		margin-bottom: 30px;
 	}
 
 	.form-popup {
