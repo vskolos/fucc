@@ -2010,7 +2010,6 @@ body {
 	font: 18px/1.3889 "helveticaneuecyr", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 	font-weight: 300;
 	min-width: 320px;
-	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -3690,6 +3689,7 @@ button {
 	font-size: 15px;
 	font-weight: bold;
 	margin: 0 0 14px;
+	text-transform: uppercase;
 }
 
 .event-post__title a {
@@ -3876,6 +3876,7 @@ button {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	align-items: center;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -3889,7 +3890,7 @@ button {
 }
 
 .subscribe__label-box {
-	padding: 21px 15px 0;
+	padding: 0 15px;
 }
 
 .subscribe__label {
@@ -3920,7 +3921,7 @@ button {
 }
 
 .article__content {
-	max-width: 1044px;
+	max-width: 820px;
 	padding-top: 46px;
 	margin-bottom: 100px;
 }
@@ -5513,8 +5514,8 @@ button {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		max-width: 150%;
-		width: 150%;
+		max-width: 120%;
+		width: 120%;
 		-webkit-transform: translateY(-50%) translateX(-50%);
 		-ms-transform: translateY(-50%) translateX(-50%);
 		transform: translateY(-50%) translateX(-50%);
@@ -6176,4 +6177,4 @@ button {
 		opacity: 1;
 	}
 }
-
+
